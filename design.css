@@ -1,0 +1,153 @@
+.header{
+    transition: background-image 1s ;
+    background-color: black;
+    width: 100%;
+    background-position: center ;
+    background-repeat: no-repeat;
+    max-width: 1282px;
+    min-height: 600px;
+    height: calc(70vh - 45px);
+    margin: 0 auto;
+}
+.container_scroll div{
+    background-size: cover; 
+    background-position: 50%;
+}
+.select_image{
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    height: calc(20vh - 45px);
+    max-width: 1282px;
+    padding: 35px 0;
+    margin: 0 auto;
+    min-height: 110px;
+    overflow-x: scroll;
+    overflow-y:hidden;
+}
+.container_scroll{
+    position: relative;
+    width: 100%;
+    left: 1%;
+    white-space : nowrap;
+    height: 100%;
+    bottom: 10%;
+}
+.i_selected{
+
+    transition: margin 1s ;
+    offset: left;
+    background-color: rgb(68, 68, 68);
+    height: calc(20vh - 45px);
+    width: 200px;
+    min-height: 120px;
+    margin: 0 10px;
+    display: inline-block;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5%;
+
+}
+.i{
+    transition: margin 1s;
+    offset: left;
+    background-color: rgb(68, 68, 68);
+    height: calc(20vh - 45px);
+    width: 200px;
+    min-height: 120px;
+    margin: 0 10px;
+    display: inline-block;
+    border-radius: 5%;
+    position: relative;
+}
+.i:hover{
+    bottom: 5%;
+    
+}
+.box1{
+    width: 100%;
+    height: calc(70vh - 45px);
+    max-width: 1282px;
+    margin: 0 auto;
+}
+.box1 > .boxbar{
+    top: 10%;
+    background-color: rgb(194, 194, 194);
+    width: 70%;
+    justify-content: center;
+    padding: 20px;
+    height: calc(15vh - 45px);
+    vertical-align:middle;
+    margin: 1%  auto;
+    position: relative;
+    border-radius: 30px;
+    list-style: none;
+}
+.boxbar > .Namebar{
+    float: left;
+    word-wrap: break-word;
+}
+.boxbar > .progresbarbg{
+    float: right;
+    background-color: grey;
+    width: 20%;
+    height: calc(10vh - 45px);
+    top: 25%;
+    position: relative;
+    margin: 0 auto;
+}
+.boxbar > .progresbarbg > .progresbar{
+    background-color: greenyellow;
+    width: 10%;
+    height: calc(10vh - 45px);
+    
+}
+.backgraundheader{
+    background-repeat: no-repeat;
+    height: calc(70vh - 45px);
+    background-image: url("mineXD.svg");
+    width: 100%;
+    background-position: 50%;
+    overflow: hidden;
+    min-height: 600px;
+}
+@keyframes titleshow{
+    from{top: -25%; opacity: 0;}
+    to{top: 25%; opacity: 1;}
+}
+.backgraundheader > .title {
+    color: white;
+    
+    opacity: 1;
+    animation-name:titleshow ;
+    animation-duration: 2s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 25%;
+    margin: 0 auto;
+    word-wrap: break-word;
+    margin-left: 5%;
+    white-space: pre-line;
+    font-size: 100px;
+}
+.backgraundheader > .game_title {
+    overflow-wrap: break-word;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    font-size: 50px;
+    margin-left: 30%;
+    word-wrap: break-word;
+}
+
+.backgraundheader > p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    position: relative;
+    top: 25%;
+    left: 5%;
+    word-wrap: break-word;
+    font-size: 100px;
+}
