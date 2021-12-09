@@ -1,7 +1,7 @@
 var image_data = {
     "0":["game1.gif","mushroom apocalypse"],
     "1":["game2.png","Mine Shaft"],
-    "2":["none","Bed Wars Plugin"]
+    "2":["game3.png","Bed Wars Plugin"]
 }
 var selected = "0"
 

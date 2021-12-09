@@ -6,29 +6,46 @@
     background-size: cover;
     background-repeat: no-repeat;
     max-width: 1282px;
-    min-height: 600px;
-    height: calc(70vh - 45px);
+    border-radius: 20px 20px 0 0;
+    height: 600px;
     margin: 0 auto;
+}
+.header *{
+    border-radius: 20px 20px 0 0;
+
+}
+/* width */
+.select_image::-webkit-scrollbar {
+    width: 20px;
+    height: 20px;
+}
+  
+
+.select_image::-webkit-scrollbar-thumb {
+    background: rgb(83, 83, 83);
+    border-radius: 50px;
 }
 .container_scroll div{
     background-size: cover; 
     background-position: 50%;
 }
 .select_image{
+    border-radius: 0 0 20px 20px;
     background-color: rgb(46, 46, 46);
     width: 100%;
-    height: calc(20vh - 45px);
     max-width: 1282px;
     padding: 35px 0;
     margin: 0 auto;
-    min-height: 110px;
+    height: 110px;
     overflow-x: scroll;
     overflow-y:hidden;
 }
+
 .container_scroll{
     position: relative;
     width: 100%;
     left: 1%;
+    
     white-space : nowrap;
     height: 100%;
     bottom: 10%;
@@ -38,9 +55,8 @@
     transition: margin 1s ;
     offset: left;
     background-color: rgb(68, 68, 68);
-    height: calc(20vh - 45px);
     width: 200px;
-    min-height: 120px;
+    height: 120px;
     margin: 0 10px;
     display: inline-block;
     border-style: solid;
@@ -52,60 +68,38 @@
     transition: margin 1s;
     offset: left;
     background-color: rgb(68, 68, 68);
-    height: calc(20vh - 45px);
     width: 200px;
-    min-height: 120px;
+    height: 120px;
     margin: 0 10px;
     display: inline-block;
     border-radius: 5%;
     position: relative;
 }
-.i:hover{
-    bottom: 5%;
-    
-}
+
 .box1{
+    align-self: center;
     width: 100%;
-    height: calc(70vh - 45px);
+    height: 250px;
     max-width: 1282px;
     margin: 0 auto;
-    background-color: rgb(211, 211, 211);
 }
-.box1 > .boxbar{
-    top: 10%;
-    background-color: rgb(194, 194, 194);
-    width: 70%;
-    justify-content: center;
-    padding: 20px;
-    height: calc(15vh - 45px);
-    vertical-align:middle;
-    margin: 1%  auto;
-    position: relative;
-    border-radius: 30px;
-    list-style: none;
+.box1 > p{
+    vertical-align: middle;
+    font-weight: bold;
+    top: 50%;
+    left:5%;
+    offset: left;
+    font-size: 40px;
+    display: inline-block;
 }
-.boxbar > .Namebar{
-    float: left;
-    word-wrap: break-word;
-}
-.boxbar > .progresbarbg{
-    float: right;
-    background-color: grey;
-    width: 20%;
-    height: calc(10vh - 45px);
-    top: 25%;
-    position: relative;
-    margin: 0 auto;
-}
-.boxbar > .progresbarbg > .progresbar{
-    background-color: greenyellow;
-    width: 10%;
-    height: calc(10vh - 45px);
-    
+.abautic{
+    display: inline-block;
+    offset: left;
+    align-self: center;
 }
 .backgraundheader{
     background-repeat: no-repeat;
-    height: calc(70vh - 45px);
+    height: 100px;
     background-image: url("mineXD.svg");
     background-size: cover;
     width: 100%;
