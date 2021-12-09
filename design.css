@@ -1,5 +1,4 @@
 .header{
-    transition: background-image 1s ;
     background-color: black;
     width: 100%;
     background-position: center ;
@@ -77,25 +76,24 @@
 }
 
 .box1{
+    
     align-self: center;
     width: 100%;
     height: 250px;
     max-width: 1282px;
     margin: 0 auto;
 }
+
 .box1 > p{
-    vertical-align: middle;
+    text-align: center;
+    position: relative;
     font-weight: bold;
-    top: 50%;
-    left:5%;
-    offset: left;
     font-size: 40px;
-    display: inline-block;
 }
 .abautic{
-    display: inline-block;
-    offset: left;
-    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .backgraundheader{
     background-repeat: no-repeat;
