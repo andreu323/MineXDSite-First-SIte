@@ -33,11 +33,19 @@
     background-color: rgb(46, 46, 46);
     width: 100%;
     max-width: 1282px;
-    padding: 35px 0;
+    
     margin: 0 auto;
-    height: 110px;
+    height: 250px;
     overflow-x: scroll;
     overflow-y:hidden;
+}
+.select_image > .title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    position: relative;
 }
 
 .container_scroll{
@@ -50,12 +58,12 @@
     bottom: 10%;
 }
 .i_selected{
-
+    padding: 35px 0;
     transition: margin 1s ;
     offset: left;
     background-color: rgb(68, 68, 68);
     width: 200px;
-    height: 120px;
+    height: 70px;
     margin: 0 10px;
     display: inline-block;
     border-style: solid;
@@ -64,11 +72,12 @@
 
 }
 .i{
+    padding: 35px 0;
     transition: margin 1s;
     offset: left;
     background-color: rgb(68, 68, 68);
     width: 200px;
-    height: 120px;
+    height: 70px;
     margin: 0 10px;
     display: inline-block;
     border-radius: 5%;

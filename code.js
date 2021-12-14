@@ -1,17 +1,18 @@
 var image_data = {
-    "0":["game1.gif","mushroom apocalypse"],
-    "1":["game2.png","Mine Shaft"],
-    "2":["game3.png","Bed Wars"]
+    "0":["game3.png","Mine XD Place </br> minecraft server"],
 }
 var selected = "0"
 
 
 window.addEventListener("load", function(event) {
-    var child = document.getElementsByClassName('container_scroll')[0].children;
+    var child = document.getElementsByClassName('container_scroll')[0];
     var backgraund = document.getElementsByClassName('header')[0];
     var title = backgraund.getElementsByClassName("backgraundheader")[0].getElementsByClassName("game_title")[0];
-    for (var i = 0; i < child.length; i++) {
-        var im = child.item(i)
+    for (var i = 0; i < Object.keys(image_data).length; i++) {
+        var image = document.createElement("div");
+        image.classList.add('i');
+        child.appendChild(image);
+        var im = image;
         im.style.backgroundImage = "url("+image_data[i][0]+")"
         if(i == selected){
             im.className = "i_selected"
