@@ -32,17 +32,4 @@ window.addEventListener("load", function(event) {
             title.innerHTML = image_data[index][1]
         })
      }
-     [].slice.apply(child).filter(is_gif_image).map(freeze_gif);
 });
-$(document).ready(function() { 
-    var $winwidth = $(window).width();
-    $("header").attr({
-        width: $winwidth
-    });
-    $(window).bind("resize", function(){ 
-        var $winwidth = $(window).width();
-        $("header").attr({
-            width: $winwidth
-        });
-     });
-}); 
